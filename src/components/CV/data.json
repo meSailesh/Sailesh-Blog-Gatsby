@@ -1,51 +1,26 @@
 {
   "header": {
-    "name": "MARAT DOSPOLOV",
-    "position": "JAVASCRIPT TECH LEADER",
+    "name": "Sailesh Dhakal",
+    "position": "Software Engineer",
     "img": {
       "src": "/photo.jpg",
-      "alt": "Marat Dospolov"
+      "alt": "Sailesh Dhakal"
     },
-    "location": "Ukraine, Kyiv",
+    "location": "Kathmandu, Nepal",
     "contacts": [
       {
-        "type": "telegram",
-        "link": "https://t.me/dospolov",
-        "linkName": "dospolov"
+        "type": "linkedIn",
+        "link": "https://www.linkedin.com/in/sailesh-dhakal/",
+        "linkName": "sailesh-dhakal"
       },
       {
         "type": "github",
-        "link": "https://github.com/dospolov",
-        "linkName": "dospolov"
+        "link": "https://github.com/meSailesh",
+        "linkName": "meSailesh"
       }
     ]
   },
-  "experiments": [
-    {
-      "name": "Account Surfer",
-      "locationIcon": "windows-store.svg",
-      "description": "Quickly switch between accounts and browsers",
-      "builtWith": ["electron", "react", "redux", "reduxsaga", "fabric"],
-      "link": "https://www.microsoft.com/en-us/p/account-surfer/9phvp9rjr7r7"
-    },
-    {
-      "name": "Trello Bookmark",
-      "locationIcon": "chrome-webstore.svg",
-      "description": "Store your bookmarks as Trello Cards",
-      "builtWith": ["apollo", "react", "antd"],
-      "link": "https://chrome.google.com/webstore/detail/trello-bookmark/ephoopolmejjnjkbbdcfgoohokhnekca",
-      "sourceCode": "https://github.com/dospolov/trello-bookmark"
-    },
-    {
-      "name": "Blog",
-      "locationIcon": "chrome.svg",
-      "description": "Read about productivity and development",
-      "builtWith": ["gatsby", "react", "netlify"],
-      "link": "https://dospolov.com",
-      "sourceCode": "https://github.com/dospolov/gatsby-starter-blog-and-cv"
-    }
-  ],
-  "pitchLine": "My passions are — web-development, cognitive biases and anthropology.",
+  "pitchLine": "My passions are — web-development and Literature.",
   "topTech": [
     "react",
     "graphql",
@@ -64,15 +39,15 @@
       "displayInTopList": true
     },
     "graphql": {
-      "name": "GraphQL",
-      "logo": "graphql.svg",
-      "website": "https://graphql.org/",
+      "name": "ASP.NET",
+      "logo": "asp.png",
+      "website": "https://dotnet.microsoft.com/apps/aspnet",
       "displayInTopList": true
     },
     "apollo": {
-      "name": "Apollo",
-      "logo": "apollo.svg",
-      "website": "https://www.apollographql.com/",
+      "name": "NodeJs",
+      "logo": "nodejs.png",
+      "website": "https://www.nodejs.org/",
       "displayInTopList": true
     },
     "redux": {
@@ -85,25 +60,25 @@
       "name": "Redux-Saga",
       "logo": "redux-saga.svg",
       "website": "https://redux-saga.js.org/",
-      "displayInTopList": true
+      "displayInTopList": false
     },
     "electron": {
       "name": "Electron",
       "logo": "electron.svg",
       "website": "https://www.electronjs.org/",
-      "displayInTopList": true
+      "displayInTopList": false
     },
     "gatsby": {
       "name": "Gatsby",
       "logo": "gatsby.svg",
       "website": "https://www.gatsbyjs.org/",
-      "displayInTopList": true
+      "displayInTopList": false
     },
     "antd": {
       "name": "Ant Design",
       "logo": "ant-design.svg",
       "website": "https://ant.design/",
-      "displayInTopList": true
+      "displayInTopList": false
     },
     "fabric": {
       "name": "Fabric UI",
@@ -144,60 +119,50 @@
       ]
     },
     "hard": {
-      "featured": ["Webpack", "ES6 / ES2017"],
+      "featured": ["ASP.NET MVC", "MSSQL"],
       "other": [
         "Adobe Photoshop",
-        "Angular.js",
-        "AWS",
+        "React.js",
+        "Power Bi",
         "Bootstrap",
-        "Backbone.js",
+        "jQuery",
         "CSS 3",
         "GIT",
-        "Gulp",
-        "Google Maps API",
-        "D3.js",
-        "Ember.js",
-        "Fabric UI",
-        "Figma",
         "Handlebars",
-        "HG",
         "HTML 5",
-        "Illustrator",
-        "Jest",
         "JIRA",
-        "LESS",
-        "Material UI",
-        "Meteor.js",
+        "Protractor",
+        "Node.js",
         "Regexp",
         "REST",
-        "SASS",
-        "Semantic UI",
-        "Socket.io",
-        "Stylus",
-        "Styled Components",
+        "Postman",
+        "SOAP UI",
+        "Solr",
+        "Redis",
         "Vanilla JS",
-        "Underscore / Lodash",
-        "Counter-Strike"
+        "Underscore",
+        "Google Tag Manager",
+        "Require JS"
       ]
     }
   },
   "experience": [
     {
       "company": {
-        "name": "N-iX",
+        "name": "UBA Solutions Pvt Ltd.",
         "logoHeight": 40,
-        "logo": "n-ix.svg",
-        "period": "March 2018 - now"
+        "logo": "uba.jpeg",
+        "period": "August 2019 - now"
       },
       "projects": [
         {
-          "name": "CleverBridge",
-          "logoHeight": 40,
-          "logo": "cleverbridge.svg",
-          "role": "JavaScript Tech Leader",
-          "description": "All-in-one ecommerce and subscription billing solution for software, SaaS & digital goods.",
+          "name": "Fonts.com",
+          "logoHeight": 200,
+          "logo": "fdc.png",
+          "role": "Software Engineer",
+          "description": "Browse and find the best selection of high-quality desktop and web fonts.",
           "stack": {
-            "me": ["React JS", "Redux", "Apollo", "GraphQL", "Webpack", "AntD"],
+            "me": ["C#", "ASP.NET", "MVC", "MSSQL", "jQuery", "NodeJs"],
             "all": [".Net"]
           },
           "achievements": [
@@ -216,199 +181,41 @@
     },
     {
       "company": {
-        "name": "MOQOD",
-        "logoHeight": 30,
-        "logo": "moqod.png",
-        "period": "August 2016 - March 2018"
+        "name": "MEEM Memory (Development Studio) Private Limited",
+        "logoHeight": 50,
+        "logo": "meem.png",
+        "period": "March 2019 - May 2019"
       },
       "projects": [
         {
-          "name": "Herofi",
-          "logoHeight": 35,
-          "logo": "herofi.svg",
-          "role": "JavaScript Tech Leader",
-          "description": "HEROFi combines visual media and data visualization to create the most advanced retail entertainment networks in the world.",
+          "name": "Password Manager Chrome Extension",
+          "logoHeight": 100,
+          "logo": "",
+          "role": "Software Engineer Intern",
+          "description": "design and innovation focussed technology company in the mobile industry.",
           "stack": {
-            "me": ["React JS", "Redux", "Webpack", "Meteor.js", "AWS IoT", "AntD"],
-            "all": ["AWS"]
+            "me": ["React JS", "Javascript"]
           },
           "achievements": [
-            "has built a team from scratch",
-            "successfully and predictably delivering of the product",
-            "high level of customer satisfaction",
-            "business objectives are met",
-            "a lot of my ideas were introduced and implemented (GitFlow, GitLab CI, Jira, new functionality)",
-            "insisted on rewriting the project - have borne fruit",
-            "chosen tech stack allow us to avoid hiring other professionals (C#, QT)",
-            "was proactive based on an understanding of the business, not just tech. requirements",
-            "mastered and taught new technologies (react + antd, redux, aws, jest)"
+            "Learned and developed some mini projects on React Js",
+            "Worked on Password Manager, a chrome extension to manage passwords and notes for different websites",
+            "Researched and Learned about progressive web app"
           ]
         }
       ]
-    },
-    {
-      "company": {
-        "name": "EPAM",
-        "logoHeight": 40,
-        "logo": "epam.svg",
-        "period": "June 2014 - August 2016"
-      },
-      "projects": [
-        {
-          "name": "SportChek",
-          "logoHeight": 40,
-          "logo": "sportchek.svg",
-          "role": "JavaScript Team Leader",
-          "description": "Interactive kiosk with multiple screens",
-          "stack": {
-            "me": ["Angular.js", "meteor.js", "REST", "Socket.io", "Stylus", "Gulp"]
-          }
-        },
-        {
-          "name": "Adidas",
-          "logoHeight": 60,
-          "logo": "adidas.svg",
-          "role": "Senior JavaScript developer",
-          "description": "Marketing portal for Adidas Group",
-          "stack": {
-            "me": ["Backbone.js", "Marionette.js", "REST", "Stylus", "Gulp"],
-            "all": ["Java"]
-          }
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "CIKLUM",
-        "period": "January 2013 - June 2014",
-        "logoHeight": 50,
-        "logo": "ciklum.svg"
-      },
-      "projects": [
-        {
-          "name": "Cutco",
-          "logoHeight": 55,
-          "logo": "cutco.svg",
-          "role": "Senior JavaScript Developer",
-          "description": "Cutco’s product line includes kitchen knives and utensils, shears, flatware, cookware and sporting knives.",
-          "stack": {
-            "me": ["Ember.js", "REST", "HTML", "SASS"],
-            "all": ["Java"]
-          }
-        },
-        {
-          "name": "Ovia Health",
-          "logoHeight": 30,
-          "logo": "ovia_health.svg",
-          "role": "Senior Frontend Developer",
-          "description": "Ovia Health delivers the #1 health solution for women and families.",
-          "stack": {
-            "me": ["jQuery", "HTML", "SASS", "Django", "Bootstrap", "Twig"],
-            "all": ["PHP", "Symphony"]
-          }
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "LUXOFT",
-        "period": "March 2011 - January 2013",
-        "logoHeight": 70,
-        "logo": "luxoft.svg"
-      },
-      "projects": [
-        {
-          "name": "Medialogia",
-          "logoHeight": 40,
-          "logo": "medialogia.svg",
-          "role": "Web developer",
-          "description": "Service for evaluating the effectiveness of communications #1 in terms of sources: 800 million SOCMEDIA and 49000 mass media",
-          "stack": {
-            "me": ["Backbone.js", "REST", "jQuery", "Bootstrap", "HTML", "CSS"],
-            "all": [".Net"]
-          }
-        },
-        {
-          "name": "Hotwire",
-          "logoHeight": 40,
-          "logo": "hotwire.svg",
-          "role": "Web developer",
-          "description": "Hotwire is a travel website that can be used to book airline tickets, hotel rooms, rental cars, and vacation packages. It operates by selling off unsold travel inventory at discounted prices.",
-          "stack": {
-            "me": ["Javascript", "CSS", "JSP"],
-            "all": ["Java", "Spring"]
-          }
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "ISRA Group",
-        "period": "June 2009 - March 2011"
-      },
-      "projects": [
-        {
-          "name": "Trading systems",
-          "role": "HTML developer",
-          "description": "Trading systems",
-          "stack": {
-            "me": ["Wordpress", "Drupal", "Joomla", "jQuery", "Bootstrap", "HTML", "CSS"],
-            "all": ["PHP"]
-          }
-        }
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "place": "Bionic University",
-      "logo": "bionic.png",
-      "logoHeight": 50,
-      "period": "2015",
-      "description": "I conducted a series of lectures for BIONIC University. Main topics: HTML / CSS / jQuery / Handlebars / Ajax / Production experience / Best practices"
     }
   ],
   "education": [
     {
-      "place": "Kiev Institute of Business and Technologies (KIBT)",
-      "period": "2012 - 2014",
-      "degree": "Bachelor's Degree, Management, Managment of business activities"
+      "place": "Bangalore Technological Institute(BTI), Bangalore, India",
+      "period": "2015 - 2019",
+      "degree": "Bachelor's Degree, Engineeering, Computer Science and Engineering"
     },
     {
-      "place": "Moscow State Institute of Radio engineering, Electronics and Automation (MIREA)",
-      "period": "2007 - 2012",
-      "degree": "Master's Degree, Computer Science And Information Technologies, Software and computing systems (software engineer)"
+      "place": "National School of Sciences(NSS), Kathmandu, Nepal",
+      "period": "2013 - 2015",
+      "degree": "Higher Secondary, Science"
     }
   ],
-  "recommendations": [
-    {
-      "name": "Alexey Morozov",
-      "jobTitle": "Delivery Manager",
-      "photo": "alex.jpg",
-      "linkedin": "https://www.linkedin.com/in/morozovalexey/",
-      "text": "I've worked with or around Marat at N-iX for about a year and I've been consistently impressed with his passion and drive for quality software. He strives for excellence in all he does is able to build quality into everything he works on.\n\n Moreover, we've been working together on several projects before N-iX and Marat led all of them to a production-ready solution that was scalable and ready to bring value to the business. As a Technical Lead Marat was able to take the idea from Stakeholders, introduce decomposition and deliver the end-solution. He was responsible for technical excellence and people management within the team. He guided everyone towards one end goal!"
-    },
-    {
-      "name": "Nikolay Mirkula",
-      "jobTitle": "Software Engineer",
-      "photo": "nick.jpg",
-      "linkedin": "https://www.linkedin.com/in/nikolay-mirkula-bb0b9ab6/",
-      "text": "Marat is an amazing professional, who brings all of the skills and expertise in programming and web development. His productivity and ambition sets a great example for the rest of the team. It was indeed a wonderful thing to work with him as the Lead Frontend Engineer at Moqod company.\n\n As a colleague, I recommend him to other institutions who may want to hire his most treasured skills"
-    },
-    {
-      "name": "Michael Sebastiyan",
-      "jobTitle": "Senior Software Engineer",
-      "photo": "mike.jpg",
-      "linkedin": "https://www.linkedin.com/in/msebastiyan/",
-      "text": "Marat is an excellent software engineer. He's very passionate about tech, building great user experiences, and improving the project codebase. He's a very high value add to every team he works on."
-    },
-    {
-      "name": "Sergii Kalashnykov",
-      "jobTitle": "Test Engineer",
-      "photo": "sergii.jpg",
-      "linkedin": "https://www.linkedin.com/in/skalashnikov/",
-      "text": "It was a pleasure working with Marat. He is a very talented passionate JavaScript developer, and a good friend. During that time I was impressed with his skill set and the way he could think through problems and find a solution for them. I would be happy to work with him again in the future."
-    }
-  ],
-  "footer": "Dospolov.com © 2020"
+  "footer": "Sailesh Dhakal © 2020"
 }
