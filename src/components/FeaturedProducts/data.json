@@ -1,14 +1,14 @@
 [
   {
-    "name": "Account Surfer",
+    "name": "feature Post 1",
     "logo": "/logos/as.svg",
-    "description": "Quickly switch between accounts and browsers.",
-    "link": "/posts/handle-chrome-profiles-with-account-surfer"
+    "description": "This is a dummy content.",
+    "link": "/posts/post-one"
   },
   {
-    "name": "Trello Bookmark",
+    "name": "Feature Post 2",
     "logo": "/logos/trello-bookmark.svg",
-    "description": "Store your bookmarks as Trello Cards.",
-    "link": "/posts/trello-plus-gtd-equals-trello-bookmark"
+    "description": "This is a dummy content.",
+    "link": "/posts/post-2"
   }
 ]
