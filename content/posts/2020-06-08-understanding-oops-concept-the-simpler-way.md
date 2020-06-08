@@ -3,7 +3,7 @@ template: post
 title: Understanding OOPs concept, the simpler way!
 slug: /posts/oops-concept
 draft: true
-priority: 1
+priority: 0
 date: 2020-06-08T15:30:26.550Z
 description: Learn OOPs concept with real world analogy
 category: programming
