@@ -6,7 +6,7 @@ module.exports = {
     'Object-Oriented-Design, ReactJS, NodeJs, productivity, javascript, Sailesh, WEBP, ASP.NET, c#',
   subtitle: 'Software Engineer. Learner. Teacher.',
   copyright: '© 2020 | Sailesh Dhakal | Built with gatsby-starter-blog-and-cv',
-  disqusShortname: 'sailesh',
+  disqusShortname: 'mesailesh',
   postsPerPage: 20,
   googleAnalyticsId: 'UA-6589522-7',
   menu: [

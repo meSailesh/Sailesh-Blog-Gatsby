@@ -2,7 +2,7 @@
 template: post
 title: Understanding OOPs concept, the simpler way!
 slug: /posts/oops-concept
-draft: true
+draft: false
 priority: 0
 date: 2020-06-08T15:30:26.550Z
 description: Learn OOPs concept with real world analogy
@@ -12,13 +12,14 @@ tags:
   - class
   - object
 ---
+
 OOPs sounded something scary during my college days. I believe this might had been the same for some of you and some of you are still having that feeling. I remember, till the last date of my college, I understood object as ,instance of class and a real world entity, without knowing what exactly it means. And the definition of class was like
 
 > A class is a user defined data-type which has data members and member functions.
 
-![funny](/media/funny.jpg "Better get OOPs concept clear")
+![funny](/media/funny.jpg 'Better get OOPs concept clear')
 
-*Better get OOPs concept clear* 
+_Better get OOPs concept clear_
 
 I understood these concept only after starting the job where I actually implemented them. I felt much better when I understood the OOPs concept on the right way.
 
@@ -50,19 +51,19 @@ With lots of research and hard work he manufactured his dream device which will 
 
 `And many more`
 
-![Yes i did it!](/media/baby.png "Yes i did it!")
+![Yes i did it!](/media/baby.png 'Yes i did it!')
 
-Now he has an idea or we can say blueprint to create the smartphones for his family and friends. He can even manufacture millions of copies. 
+Now he has an idea or we can say blueprint to create the smartphones for his family and friends. He can even manufacture millions of copies.
 
-**Lets utilize this scenario to learn class and object.** 
+**Lets utilize this scenario to learn class and object.**
 
 The blueprint that he designed to create smartphones can be considered it as class. Lets name that class as Smartphone since we will be using it to create lots of smartphones.
 
 Lets bring the definition of class that we saw earlier
 
-> *A class is a user defined data-type which has data members and member functions.*
+> _A class is a user defined data-type which has data members and member functions._
 
-Now it seems somewhat familiar. But lets decompose it more. Its a user defined data-type - We saw from the scenario, the man created something that was completely as he defined and wanted it to be like. Neither we can represent that device he made as integer nor string nor array but we can tell it as smartphone type and it will sound  perfect. 
+Now it seems somewhat familiar. But lets decompose it more. Its a user defined data-type - We saw from the scenario, the man created something that was completely as he defined and wanted it to be like. Neither we can represent that device he made as integer nor string nor array but we can tell it as smartphone type and it will sound perfect.
 
 It has a data members or we can call them as **attributes.** These are the property that will describe our smartphone class. Screen, battery, storage space, charging port all are the attributes.
 
@@ -70,7 +71,7 @@ Attributes describe how smartphones look, but it does not tell how it works or w
 
 We also saw that class can also be defined as a **blueprint** using which we can make many objects.
 
-![Wait Wait Wait](/media/wait.jpg "Wait wait Wait")
+![Wait Wait Wait](/media/wait.jpg 'Wait wait Wait')
 
 ##### What is object?
 
@@ -86,11 +87,11 @@ Lets bring the definition.
 
 Yes its straightforward. It is the real entity that we can see and it brings our concept of smartphone class to life.
 
-![point](/media/point.jpg "point")
+![point](/media/point.jpg 'point')
 
 Before wrapping up, Lets try to manufacture our own smartphone. My smartphone will be like:
 
-`Screen  = 6 inch`
+`Screen = 6 inch`
 
 `Battery = 4100 mh`
 
