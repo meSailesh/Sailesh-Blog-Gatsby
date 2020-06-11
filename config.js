@@ -8,7 +8,7 @@ module.exports = {
   copyright: '© 2020 | Sailesh Dhakal | Built with gatsby-starter-blog-and-cv',
   disqusShortname: 'mesailesh',
   postsPerPage: 20,
-  googleAnalyticsId: 'UA-6589522-7',
+  googleAnalyticsId: 'UA-146701165-1',
   menu: [
     {
       label: 'Blog',

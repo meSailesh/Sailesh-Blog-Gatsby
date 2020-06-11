@@ -1,9 +1,9 @@
 [
   {
-    "name": "feature Post 1",
+    "name": "OOPs concept in plain english",
     "logo": "/logos/as.svg",
-    "description": "This is a dummy content.",
-    "link": "/posts/post-one"
+    "description": "Understanding OOPs concept, Simpler Way!",
+    "link": "/posts/oops-concept"
   },
   {
     "name": "Feature Post 2",
