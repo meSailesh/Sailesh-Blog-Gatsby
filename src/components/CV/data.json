@@ -50,40 +50,10 @@
       "website": "https://www.nodejs.org/",
       "displayInTopList": true
     },
-    "redux": {
-      "name": "Redux",
-      "logo": "redux.svg",
-      "website": "https://redux.js.org/",
-      "displayInTopList": true
-    },
-    "reduxsaga": {
-      "name": "Redux-Saga",
-      "logo": "redux-saga.svg",
-      "website": "https://redux-saga.js.org/",
-      "displayInTopList": false
-    },
-    "electron": {
-      "name": "Electron",
-      "logo": "electron.svg",
-      "website": "https://www.electronjs.org/",
-      "displayInTopList": false
-    },
     "gatsby": {
       "name": "Gatsby",
       "logo": "gatsby.svg",
       "website": "https://www.gatsbyjs.org/",
-      "displayInTopList": false
-    },
-    "antd": {
-      "name": "Ant Design",
-      "logo": "ant-design.svg",
-      "website": "https://ant.design/",
-      "displayInTopList": false
-    },
-    "fabric": {
-      "name": "Fabric UI",
-      "logo": "fabric.svg",
-      "website": "https://developer.microsoft.com/en-us/fabric",
       "displayInTopList": false
     },
     "netlify": {
@@ -96,26 +66,16 @@
   "skills": {
     "soft": {
       "featured": [
-        "Focus on business needs",
-        "Team building / Leadership",
-        "Coaching",
         "Decision making",
         "Communication",
-        "Integrity"
+        "Team Work",
+        "Willingness to Learn"
       ],
       "other": [
-        "Scheduling",
-        "Risk Management",
         "Critical Thinking",
         "Problem Solving",
-        "Project Recovery",
         "Task Management",
-        "Business Process Improvement",
-        "Budgeting",
-        "UX Prototyping",
-        "Requirements Analysis",
-        "Conflict Management",
-        "Policy Knowledge"
+        "Accountability"
       ]
     },
     "hard": {
