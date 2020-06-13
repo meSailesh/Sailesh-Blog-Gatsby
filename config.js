@@ -4,7 +4,7 @@ module.exports = {
   title: 'Blog by Sailesh',
   keywords:
     'Object-Oriented-Design, ReactJS, NodeJs, productivity, javascript, Sailesh, WEBP, ASP.NET, c#',
-  subtitle: 'Software Engineer. Learner. Teacher.',
+  subtitle: 'Software Engineer. Literatue. Blog. Cricket.',
   copyright: '© 2020 | Sailesh Dhakal | Built with gatsby-starter-blog-and-cv',
   disqusShortname: 'mesailesh',
   postsPerPage: 20,
@@ -22,7 +22,7 @@ module.exports = {
   author: {
     name: 'Sailesh Dhakal',
     photo: '/photo.jpg',
-    bio: 'Software Engineer. Learner. Teacher.',
+    bio: 'Software Engineer. Literatue. Blog. Cricket.',
     contacts: {
       // don't remove fields, just make them empty string ''
       // https://github.com/gatsbyjs/gatsby/issues/2392
