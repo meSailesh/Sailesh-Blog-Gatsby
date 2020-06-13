@@ -21,16 +21,7 @@
     ]
   },
   "pitchLine": "My passions are — web-development and Literature.",
-  "topTech": [
-    "react",
-    "graphql",
-    "apollo",
-    "redux",
-    "reduxsaga",
-    "electron",
-    "gatsby",
-    "antd"
-  ],
+  "topTech": ["react", "graphql", "apollo", "gatsby", "netlify"],
   "tech": {
     "react": {
       "name": "React",
