@@ -6,7 +6,7 @@
     Created with the help of  by <a href="https://github.com/dospolov/gatsby-starter-blog-and-cv">Gatsby Starter Blog and CV</a>
 </p>
 
-Visit httpps://www.saileshdhakal.com.np
+Visit https://www.saileshdhakal.com.np
 
 ## 🚀 Quick start
 
@@ -80,4 +80,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/meSailesh/Sailesh-Blog-Gatsby)
 
- _Note: You can change the source code as per the needs. However, the blog posts are subjected to the copyright @Sailesh,20202
+ _Note: You can change the source code as per the needs. However, the blog posts are subjected to the copyright @Sailesh,2020
