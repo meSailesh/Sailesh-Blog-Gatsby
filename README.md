@@ -1,23 +1,18 @@
 <h1 align="center">
-<img alt="Gatsby Blog and CV starter" src="https://dospolov.com/media/gatsby-starter-blog-and-cv.png">
-    Gatsby Blog and CV starter
+   Personal Blog website made with Gastby
 </h1>
 
 <p>
-    Inspired by <a href="https://github.com/alxshelepenok/gatsby-starter-lumen">gatsby-starter-lumen</a>
+    Created with the help of  by <a href="https://github.com/dospolov/gatsby-starter-blog-and-cv">Gatsby Starter Blog and CV</a>
 </p>
 
-Demo: https://dospolov.com/
+Visit httpps://www.saileshdhakal.com.np
 
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the Blog and CV starter.
-
-    ```shell
-    # create a new Gatsby site using the Blog and CV starter
-    gatsby new my-blog-and-cv https://github.com/dospolov/gatsby-starter-blog-and-cv
+    Download this project as zip or clone using CLI
     ```
 
 1.  **Start developing.**
@@ -85,4 +80,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/meSailesh/Sailesh-Blog-Gatsby)
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/dospolov/gatsby-starter-blog-and-cv)
+ _Note: You can change the source code as per the needs. However, the blog posts are subjected to the copyright @Sailesh,20202
