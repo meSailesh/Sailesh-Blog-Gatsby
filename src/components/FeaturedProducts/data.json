@@ -1,14 +1,14 @@
 [
   {
     "name": "OOPs concept in plain english",
-    "logo": "/logos/as.svg",
+    "logo": "/logos/app.svg",
     "description": "Understanding OOPs concept, Simpler Way!",
     "link": "/posts/oops-concept"
   },
   {
-    "name": "Feature Post 2",
-    "logo": "/logos/trello-bookmark.svg",
-    "description": "This is a dummy content.",
-    "link": "/posts/post-2"
+    "name": "An overview of 4 pillars of OOps",
+    "logo": "/logos/explore.svg",
+    "description": "Learn 4 pillars of OOPs in plain english.",
+    "link": "/posts/pillars-of-oops"
   }
 ]

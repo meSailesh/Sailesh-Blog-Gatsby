@@ -6,9 +6,9 @@ draft: false
 priority: 1
 date: 2020-06-08T15:30:26.550Z
 description: Learn OOPs concept with real world analogy
-category: programming
+category: Programming
 tags:
-  - object-oriented-programming
+  - Object-Oriented-Concept
   - class
   - object
 ---
