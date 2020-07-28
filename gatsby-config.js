@@ -86,7 +86,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Blog by Marat Dospolov'
+            title: 'Blog by Sailesh'
           }
         ]
       }
@@ -138,6 +138,12 @@ module.exports = {
         pluginConfig: {
           head: true
         }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-google-adsense',
+      options: {
+        publisherId: siteConfig.googleAdSensePublisherId
       }
     },
     {
