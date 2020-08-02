@@ -3,7 +3,7 @@ template: post
 title: How I fixed "Battery draining even after shutdown" issue in my ThinkPad e560
 slug: /posts/power-drain-after-shutdown
 draft: false
-priority: 2
+priority: 0
 date: 2020-08-02T05:32:30.161Z
 description: Battery started to drain overnight in my laptop Thinkpad e560 after
   switching to Ubuntu from the windows 10. Recently, I was able to fixed it.
@@ -48,4 +48,4 @@ The "Always On USB" feature that comes on most of the thinkpad laptops allow you
 
 ![always on usb](/media/always-on-usb.jpg "always on usb")
 
-That  was all. Now, I my battery is fresh and awake when I turn by laptop on.  Thanks for reading it :) . I hope it might be helpful to you if you are facing the similar issue too.
+That  was all. Now, my battery is fresh and awake when I turn by laptop on.  Thanks for reading it :) . I hope it might be helpful to you, if you are facing the similar issue too.
