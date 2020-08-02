@@ -3,19 +3,24 @@ template: post
 title: How I fixed "Battery draining even after shutdown" issue in my ThinkPad e560
 slug: /posts/power-drain-after-shutdown
 draft: false
-priority: 1
+priority: 2
 date: 2020-08-02T05:32:30.161Z
 description: Battery started to drain overnight in my laptop Thinkpad e560 after
   switching to Ubuntu from the windows 10. Recently, I was able to fixed it.
 category: laptop
 tags:
-  - ubuntu shutdown laptop battery
+  - ubuntu
+  - shutdown
+  - laptop
+  - battery
 ---
 ![battery drain even after power off](/media/drain.jpg "battery drain even after power off")
 
+*Photo Courtesy: Google*
+
 I recently switched to Ubuntu 20.4 LTS and said good bye to windows 10. After switching to Ubuntu, I felt the performance of my laptop is better than the earlier. Even the battery backup was increased by an hour. However, I started to notice one problem. Every morning when I open my laptop, it used to be dead. Initially I didn't took it seriously but when it started occurring rapidly, I started investigating it. I tried shutdown from the command line to make sure it has shut down properly.
 
-```
+```shell
 shutdown -h now
 ```
 
@@ -35,12 +40,12 @@ Then and there I realized that this issue is not something related with my OS.Th
 
 According to Wikipedia, " **Wake-on-LAN**(**WoL**) is an[](https://en.wikipedia.org/wiki/Ethernet "Ethernet") Ethernet or token ring computer networking standard that allows a computer to be turned on or awakened by a network message." I disabled it from my Bios setting.
 
-![wake on LAN](/media/img_20200802_111234.jpg "wake on LAN")
+![wake on LAN](/media/wol.jpg "wake on LAN")
 
 ### Always On USB
 
 The "Always On USB" feature that comes on most of the thinkpad laptops allow you to charge your mp3 player, phone and gadgets even when your laptop is turned on. I also disabled it from my Bios Setting.
 
-![always on usb](/media/img_20200802_111300.jpg "always on usb")
+![always on usb](/media/always-on-usb.jpg "always on usb")
 
-That  was all. Now, I my battery is fresh and awake when I turn by laptop on.  Thanks for reading it :blush: . I hope it might be helpful to you if you are facing the similar issue too.
+That  was all. Now, I my battery is fresh and awake when I turn by laptop on.  Thanks for reading it :) . I hope it might be helpful to you if you are facing the similar issue too.
