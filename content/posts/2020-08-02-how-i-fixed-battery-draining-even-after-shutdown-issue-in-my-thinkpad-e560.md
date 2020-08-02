@@ -1,8 +1,8 @@
 ---
 template: post
-title: How I fixed Battery Draining even after shutdown issue in my ThinkPad e560
+title: How I fixed "Battery draining even after shutdown" issue in my ThinkPad e560
 slug: /post/power-drain-after-shutdown
-draft: true
+draft: false
 priority: 1
 date: 2020-08-02T05:32:30.161Z
 description: Battery started to drain overnight in my laptop Thinkpad e560 after
