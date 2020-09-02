@@ -8,12 +8,18 @@ date: 2020-09-02T03:58:04.860Z
 description: Sort List based on other sorted lists using Linq in C#
 category: Programming
 tags:
-  - C#
+  - Csharp
   - Linq
   - Sorting
   - list
+  - dotnet
 ---
 This is a common scenario that we face while working. We want to sort the list based on the different value of its some of the properties. We can achieve this by iterating through the list and putting several conditional statements. However, It might be hectic if we want to sort the list based on more than one property with multiple values for each property.
+
+![sorting list](/media/sort.jpg "Sorting")
+
+
+**Image Courtesy: Google **
 
 LINQ is a life saviour in such a situation and can save our day. We can achieve the same using very minimal lines of code. We will define the lists for the properties through which we want to sort the array and assign the expected value in the sorted order. Then we will use LINQ to iterate and sort the main list.
 
@@ -30,8 +36,6 @@ public class Student {
 	public string section {get; set;}
 	public int rollNumber {get; set;}
 }
-
-
 ```
 
 Each student will have a name along with other information such as the standard they are studying on, section and their roll number.
@@ -54,16 +58,12 @@ List<Student> students = new List<Student>(){
 
 Suppose we want to order the students based on their standard first followed by section and rollNumber respectively in the specific order of their value. For that, let's create a different list with the value in sorted order. rollNumber will be sorted on ascending order.
 
-
-
 ```
 		List<string> sortedStandard = new List<string>() {"Second", "First", "Third"};
 		List<string> sortedSection = new List<string>() {"B", "A"};
 ```
 
 Now, we have created everything required to proceed ahead. Let's sort our List based on our requirement mentioned in the form of sorted lists.
-
-
 
 ```
 	List<Student> sortedStudents = students.
@@ -75,8 +75,6 @@ Now, we have created everything required to proceed ahead. Let's sort our List b
 That's all!. Isn't it easier? Instead of writing the chain of looping statements and conditionals, we achieved the required result within a single statement using a Linq. 
 
 Here is the output of our program.
-
-
 
 ```
 {
