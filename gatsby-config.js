@@ -141,12 +141,6 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-google-adsense',
-      options: {
-        publisherId: siteConfig.googleAdSensePublisherId
-      }
-    },
-    {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         query: `
