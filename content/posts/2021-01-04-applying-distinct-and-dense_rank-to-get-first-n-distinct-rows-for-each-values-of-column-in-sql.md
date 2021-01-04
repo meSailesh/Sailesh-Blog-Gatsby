@@ -38,7 +38,7 @@ TableName: **TrackingData**
 | 8              | Chicago | Delivered      |
 | 9              | Chicago | Delivered      |
 
-
+![applying-distinct-and-dense_rank-in-sql](/media/optimized-caspar-camille-rubin-fpkvu7rdmco-unsplash.jpg "applying-distinct-and-dense_rank-in-sql  ")
 
 ## Problem Statement
 
@@ -54,8 +54,6 @@ These are the conditions that I need to use to filter the datasets:
 
 Based on the above criteria the resultant dataset should look like the following:
 
-
-
 | TrackingNumber | City    | DeliveryStatus | RowNumber |
 | -------------- | ------- | -------------- | --------- |
 | 5              | Chicago | Delivered      | 1         |
@@ -67,8 +65,6 @@ Based on the above criteria the resultant dataset should look like the following
 | 3              | Seattle | Delivered      | 1         |
 | 3              | Seattle | Delivered      | 1         |
 | 4              | Seattle | Delivered      | 2         |
-
-
 
 ## Preparing the Dataset
 
@@ -127,8 +123,6 @@ First two criteria can be simply achieved with the following select statement:
 | 8              | Chicago | Delivered      |
 | 9              | Chicago | Delivered      |
 
-
-
 So the above table consists of rows with Distinct TrackingNumber for each City which is successfully delivered.
 
 Now, How can we get Maximum 3 rows for each City? As we see in the above table there are 4 rows for Chicago but the expected result is 3.
@@ -160,8 +154,6 @@ We can use the Dense_Rank function to assign a unique rank value to a distinct r
 | 3              | Seattle | NotDelivered   | 1         |
 | 4              | Seattle | Delivered      | 2         |
 
-
-
 As we see in the above table, the rank is specific to the city and the unique rank is given only for the distinct row. Same rows are having the same rank value.
 
 Now, we can filter the data based on our RowNumber column to get the top 3 rows for each country as below:
@@ -184,8 +176,6 @@ Now, we can filter the data based on our RowNumber column to get the top 3 rows 
 | 3              | Seattle | Delivered      | 1         |
 | 3              | Seattle | NotDelivered   | 1         |
 | 4              | Seattle | Delivered      | 2         |
-
-
 
 ***Note: We cannot directly use the RowNumber in the where clause since it is a derived column and the column is created only after the where clause is executed based on logical processing order. So we need to use the derived tables.***
 
@@ -210,7 +200,5 @@ Finally, let's merge all our select statement into one to get the desired output
 | 3              | Seattle | Delivered      | 1         |
 | 3              | Seattle | Delivered      | 1         |
 | 4              | Seattle | Delivered      | 2         |
-
-
 
 I hope this was helpful to you. Please free to give feedback on comment section :).
