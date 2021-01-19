@@ -37,12 +37,9 @@ TableName: **TrackingData**
 | 7              | Chicago | NotDelivered   |
 | 8              | Chicago | Delivered      |
 | 9              | Chicago | Delivered      |
-
-``
+<br/>
 
 ![applying-distinct-and-dense_rank-in-sql](/media/optimized-caspar-camille-rubin-fpkvu7rdmco-unsplash.jpg "applying-distinct-and-dense_rank-in-sql  ")
-
-``
 
 ## Problem Statement
 
@@ -77,8 +74,6 @@ create table TrackingData (TrackingNumber int,City varchar,DeliveryStatus varcha
 Insert into TrackingData values (1, 'NewYork', 'Delivered'),(1, 'NewYork', 'Delivered'),(2, 'NewYork', 'Delivered'),(3, 'Seattle', 'Delivered'),(3, 'Seattle', 'Delivered'),(3, 'Seattle', 'NotDelivered'),(4, 'Seattle', 'Delivered'),(5, 'Chicago', 'Delivered'),(6, 'Chicago', 'Delivered'),(7, 'Chicago', 'NotDelivered'),(8, 'Chicago', 'Delivered'),(9, 'Chicago', 'Delivered');
 ```
 
-``
-
 ## First Glance to Select Query
 
 ```sql
@@ -104,8 +99,6 @@ select Distinct * from TrackingData where DeliveryStatus = 'Delivered';
 | 8              | Chicago | Delivered      |
 | 9              | Chicago | Delivered      |
 
-
-
 So the above table consists of rows with Distinct TrackingNumber for each City which is successfully delivered.
 
 Now, How can we get Maximum 3 rows for each City? As we see in the above table there are 4 rows for Chicago but the expected result is 3.
@@ -120,8 +113,6 @@ We can use the Dense_Rank function to assign a unique rank value to a distinct r
 ```sql
 select *, DENSE_RANK() over (partition by City order by TrackingNumber) as 'RowNumber' from TrackingData;
 ```
-
-
 
 **Output**
 
@@ -140,8 +131,6 @@ select *, DENSE_RANK() over (partition by City order by TrackingNumber) as 'RowN
 | 3              | Seattle | NotDelivered   | 1         |
 | 4              | Seattle | Delivered      | 2         |
 
-
-
 As we see in the above table, the rank is specific to the city and the unique rank is given only for the distinct row. Same rows are having the same rank value.
 
 Now, we can filter the data based on our RowNumber column to get the top 3 rows for each country as below:
@@ -149,8 +138,6 @@ Now, we can filter the data based on our RowNumber column to get the top 3 rows 
 ```sql
 select * from (select *,DENSE_RANK() over (partition by City order by TrackingNumber) as 'RowNumber' from TrackingData) as newTable where newTable.'RowNumber' <=3;
 ```
-
-
 
 **Output**
 
@@ -167,7 +154,7 @@ select * from (select *,DENSE_RANK() over (partition by City order by TrackingNu
 | 3              | Seattle | NotDelivered   | 1         |
 | 4              | Seattle | Delivered      | 2         |
 
-``
+
 
 ***Note: We cannot directly use the RowNumber in the where clause since it is a derived column and the column is created only after the where clause is executed based on logical processing order. So we need to use the derived tables.***
 
@@ -176,8 +163,6 @@ Finally, let's merge all our select statement into one to get the desired output
 ```sql
 select * from (select distinct *, DENSE_RANK() over (partition by City order by TrackingNumber) as 'RowNumber' from TrackingData where DeliveryStatus = 'Delivered') as newtable where newtable.RowNumber <=3;
 ```
-
-
 
 **Output**
 
@@ -193,6 +178,6 @@ select * from (select distinct *, DENSE_RANK() over (partition by City order by 
 | 3              | Seattle | Delivered      | 1         |
 | 4              | Seattle | Delivered      | 2         |
 
-``
+
 
 I hope this was helpful to you. Please free to give feedback on comment section :).
