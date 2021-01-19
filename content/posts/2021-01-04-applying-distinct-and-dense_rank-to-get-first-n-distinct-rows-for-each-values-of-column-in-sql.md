@@ -2,7 +2,7 @@
 template: post
 title: Applying Distinct and Dense_Rank to get first N distinct rows for each
   values of Column in SQL
-slug: apply-distinct-and-dense_rank-in-sql
+slug: /posts/apply-distinct-and-dense_rank-in-sql
 draft: false
 priority: 1
 date: 2021-01-04T16:28:09.507Z
