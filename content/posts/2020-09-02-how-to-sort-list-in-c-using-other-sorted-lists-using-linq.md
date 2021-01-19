@@ -18,8 +18,7 @@ This is a common scenario that we face while working. We want to sort the list b
 
 ![sorting list](/media/sort.jpg "Sorting")
 
-
-**Image Courtesy: Google **
+**Image Courtesy: Google** 
 
 LINQ is a life saviour in such a situation and can save our day. We can achieve the same using very minimal lines of code. We will define the lists for the properties through which we want to sort the array and assign the expected value in the sorted order. Then we will use LINQ to iterate and sort the main list.
 
@@ -27,7 +26,7 @@ Here is the link to the fiddle for working [example](https://dotnetfiddle.net/cF
 
 Let's start by creating a model class for our example.
 
-``
+
 
 ```csharp
 public class Student {
