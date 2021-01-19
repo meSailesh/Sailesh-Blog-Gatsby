@@ -3,7 +3,7 @@ template: post
 title: How to sort list in C# using other sorted lists using LinQ
 slug: /posts/sort-list-using-other-list-linq
 draft: false
-priority: 2
+priority: 0
 date: 2020-09-02T03:58:04.860Z
 description: Sort List based on other sorted lists using Linq in C#
 category: Programming
