@@ -29,7 +29,7 @@ Let's start by creating a model class for our example.
 
 ``
 
-```
+```csharp
 public class Student {
 	public string name {get; set;}
 	public string standard { get; set;}
@@ -42,7 +42,7 @@ Each student will have a name along with other information such as the standard 
 
 Let's create a generic list of our students.
 
-```
+```csharp
 List<Student> students = new List<Student>(){
 			new Student {name ="Bob", standard = "Third", section ="A", rollNumber=10},
 			new Student {name ="Smith", standard = "Second", section ="B", rollNumber=5},
@@ -58,14 +58,14 @@ List<Student> students = new List<Student>(){
 
 Suppose we want to order the students based on their standard first followed by section and rollNumber respectively in the specific order of their value. For that, let's create a different list with the value in sorted order. rollNumber will be sorted on ascending order.
 
-```
+```csharp
 		List<string> sortedStandard = new List<string>() {"Second", "First", "Third"};
 		List<string> sortedSection = new List<string>() {"B", "A"};
 ```
 
 Now, we have created everything required to proceed ahead. Let's sort our List based on our requirement mentioned in the form of sorted lists.
 
-```
+```csharp
 	List<Student> sortedStudents = students.
 			OrderBy(x => sortedStandard.IndexOf(x.standard)).
 			ThenBy(x => sortedSection.IndexOf(x.section)).
