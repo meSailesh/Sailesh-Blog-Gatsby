@@ -10,6 +10,8 @@ const Layout = ({ children, title, description, keywords, article }) => (
       <meta name="keywords" content={keywords} />
       <meta name="description" content={description} />
       <meta property="og:site_name" content={title} />
+      <meta property="og:title" content={title} />
+      <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
       {article && <meta property="og:type" content="article" />}
@@ -17,6 +19,7 @@ const Layout = ({ children, title, description, keywords, article }) => (
       {article && article.description && (
         <meta property="og:description" content={article.description} />
       )}
+      {article && article.slug && <meta property="og:url" content={article.slug} />}
     </Helmet>
     {children}
   </AntLayout>

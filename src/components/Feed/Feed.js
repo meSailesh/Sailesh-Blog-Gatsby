@@ -25,6 +25,8 @@ const Feed = ({ edges, allCategories }) =>
     } = edge
     const featured = priority > 0
     const imgFound = html && html.match(/<img\s+[^>]*?src=("|')([^"']+)/i)
+    const imgAltFound = html && html.match(/<img\s+[^>]*?alt=("|')([^"']+)/i)
+    const imgAlt = imgAltFound && imgAltFound[2]
     const imgSrc = imgFound && imgFound[2]
     const categoryColor = getCategoryColor({ allCategories, category })
     let externalLink = null
@@ -47,7 +49,7 @@ const Feed = ({ edges, allCategories }) =>
           {imgSrc && (
             <Col xs={24} sm={24} md={4} lg={4} xl={4}>
               <Link to={slug}>
-                <img src={imgSrc} alt="" title="" className="mb-5 poster" />
+                <img src={imgSrc} alt={imgAlt} title="" className="mb-5 poster" />
               </Link>
             </Col>
           )}
