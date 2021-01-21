@@ -7,7 +7,7 @@ const Author = ({ author }) => (
       <img
         className="rounded-full"
         src={withPrefix(author.photo)}
-        width={85}
+        width={100}
         alt={author.name}
       />
     </Link>

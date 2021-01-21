@@ -15,7 +15,7 @@ const PostTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout
-      title={`${postTitle} - ${siteTitle}`}
+      title={postTitle}
       description={metaDescription}
       keywords={keywords}
       article={{

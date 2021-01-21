@@ -86,7 +86,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Blog by Sailesh'
+            title: 'Latest Technology and Programming Blog | Sailesh'
           }
         ]
       }
@@ -216,7 +216,7 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#97266d',
         display: 'standalone',
-        icon: 'static/photo16x.jpg'
+        icon: 'static/photo16x.png'
       }
     },
     'gatsby-plugin-catch-links',

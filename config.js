@@ -1,10 +1,10 @@
 module.exports = {
   url: 'https://saileshdhakal.com.np',
   pathPrefix: '/',
-  title: 'Blog by Sailesh',
+  title: 'Latest Technology and Programming Blog | Sailesh',
   keywords:
-    'Object-Oriented-Design, ReactJS, NodeJs, productivity, javascript, Sailesh, WEBP, ASP.NET, c#',
-  subtitle: 'Software Engineer. Literatue. Blog. Cricket.',
+    'Object-Oriented-Design, ReactJS, NodeJs, productivity, javascript, Sailesh, WEBP, ASP.NET, c#, Technology, Programming',
+  subtitle: 'Programming and Tech News',
   copyright: '© 2020 | Sailesh Dhakal | Built with gatsby-starter-blog-and-cv',
   disqusShortname: 'mesailesh',
   postsPerPage: 20,
@@ -21,7 +21,7 @@ module.exports = {
   ],
   author: {
     name: 'Sailesh Dhakal',
-    photo: '/photo.jpg',
+    photo: '/photo.png',
     bio: 'Software Engineer. Literatue. Blog. Cricket.',
     contacts: {
       // don't remove fields, just make them empty string ''
