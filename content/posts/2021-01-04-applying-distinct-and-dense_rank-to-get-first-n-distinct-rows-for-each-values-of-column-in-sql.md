@@ -1,7 +1,6 @@
 ---
 template: post
-title: Applying Distinct and Dense_Rank to get first N distinct rows for each
-  values of Column in SQL
+title: Applying Distinct and Dense_Rank in SQL
 slug: /posts/apply-distinct-and-dense-rank-in-sql
 draft: false
 priority: 1
@@ -10,7 +9,7 @@ description: Recently I came up with a problem statement where I had to filter
   my data to retrieve the first 3 distinct rows for each value of a certain
   column in SQL. I applied a Distinct and Dense Rank function to achieve this. I
   have explained every bit of the query in this post.
-category: Programming
+category: programming
 tags:
   - sql
   - relational-database
@@ -18,8 +17,9 @@ tags:
   - dense-rank
   - distinct
   - partition
+  - sql-server
+  - ssms
 ---
-
 Recently, I came up with a problem statement where I had to filter my data to retrieve the first 3 distinct rows for each value of a certain column in SQL. The input dataset seems to be as follows:
 
 TableName: **TrackingData**
@@ -107,8 +107,8 @@ Now, How can we get Maximum 3 rows for each City? As we see in the above table t
 
 We are going to follow the following steps:
 
-- Add a new index column for each row based on the Cities(like NewYork 1...n, Chicago 1...n)
-- Select the top 3 rows based on the Index column
+* Add a new index column for each row based on the Cities(like NewYork 1...n, Chicago 1...n)
+* Select the top 3 rows based on the Index column
 
 We can use the Dense_Rank function to assign a unique rank value to a distinct row for each group of data. We will use the Partition and Over function to group our data based on the city name as below:
 
@@ -156,7 +156,7 @@ select * from (select *,DENSE_RANK() over (partition by City order by TrackingNu
 | 3              | Seattle | NotDelivered   | 1         |
 | 4              | Seattle | Delivered      | 2         |
 
-**_Note: We cannot directly use the RowNumber in the where clause since it is a derived column and the column is created only after the where clause is executed based on logical processing order. So we need to use the derived tables._**
+***Note: We cannot directly use the RowNumber in the where clause since it is a derived column and the column is created only after the where clause is executed based on logical processing order. So we need to use the derived tables.***
 
 Finally, let's merge all our select statement into one to get the desired output.
 
