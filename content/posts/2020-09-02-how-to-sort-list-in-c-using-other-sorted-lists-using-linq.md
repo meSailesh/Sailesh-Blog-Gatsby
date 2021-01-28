@@ -6,13 +6,16 @@ draft: false
 priority: 0
 date: 2020-09-02T03:58:04.860Z
 description: Sort List based on other sorted lists using Linq in C#
-category: Programming
+category: programming
 tags:
-  - Csharp
-  - Linq
+  - csharp
+  - linq
   - Sorting
   - list
   - dotnet
+  - asp
+  - cs
+  - microsoft
 ---
 This is a common scenario that we face while working. We want to sort the list based on the different value of its some of the properties. We can achieve this by iterating through the list and putting several conditional statements. However, It might be hectic if we want to sort the list based on more than one property with multiple values for each property.
 
