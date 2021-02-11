@@ -69,17 +69,36 @@ Based on the above criteria the resultant dataset should look like the following
 ## Preparing the Dataset
 
 ```sql
-create table TrackingData (TrackingNumber int,City varchar,DeliveryStatus varchar);
+CREATE TABLE TrackingData 
+(TrackingNumber int,City varchar,DeliveryStatus varchar);
 ```
 
 ```sql
-Insert into TrackingData values (1, 'NewYork', 'Delivered'),(1, 'NewYork', 'Delivered'),(2, 'NewYork', 'Delivered'),(3, 'Seattle', 'Delivered'),(3, 'Seattle', 'Delivered'),(3, 'Seattle', 'NotDelivered'),(4, 'Seattle', 'Delivered'),(5, 'Chicago', 'Delivered'),(6, 'Chicago', 'Delivered'),(7, 'Chicago', 'NotDelivered'),(8, 'Chicago', 'Delivered'),(9, 'Chicago', 'Delivered');
+INSERT INTO TrackingData 
+VALUES (1, 'NewYork', 'Delivered'),
+(1, 'NewYork', 'Delivered'),
+(2, 'NewYork', 'Delivered'),
+(3, 'Seattle', 'Delivered'),
+(3, 'Seattle', 'Delivered'),
+(3, 'Seattle', 'NotDelivered'),
+(4, 'Seattle', 'Delivered'),
+(5, 'Chicago', 'Delivered'),
+(6, 'Chicago', 'Delivered'),
+(7, 'Chicago', 'NotDelivered'),
+(8, 'Chicago', 'Delivered'),
+(9, 'Chicago', 'Delivered');
 ```
 
 ## First Glance to Select Query
 
 ```sql
-select * from (select distinct *, DENSE_RANK() over (partition by City order by TrackingNumber) as 'RowNumber' from TrackingData where DeliveryStatus = 'Delivered') as newtable where newtable.RowNumber <=3;
+SELECT * 
+FROM (
+  SELECT DISTINCT *,
+  DENSE_RANK() OVER (PARTITION BY City ORDER BY TrackingNumber) AS 'RowNumber'
+  FROM TrackingData
+  WHERE DeliveryStatus = 'Delivered') AS newtable
+WHERE newtable.RowNumber <=3;
 ```
 
 Looks complex? It's easier than what it looks at the first glance. Let's decompose the query and understand it on the chunk. We have mainly three criteria: Distinct, Delivered and max 3 rows.
@@ -87,7 +106,9 @@ Looks complex? It's easier than what it looks at the first glance. Let's decompo
 First two criteria can be simply achieved with the following select statement:
 
 ```sql
-select Distinct * from TrackingData where DeliveryStatus = 'Delivered';
+SELECT DISTINCT *
+FROM TrackingData
+WHERE DeliveryStatus = 'Delivered';
 ```
 
 | TrackingNumber | City    | DeliveryStatus |
@@ -113,7 +134,9 @@ We are going to follow the following steps:
 We can use the Dense_Rank function to assign a unique rank value to a distinct row for each group of data. We will use the Partition and Over function to group our data based on the city name as below:
 
 ```sql
-select *, DENSE_RANK() over (partition by City order by TrackingNumber) as 'RowNumber' from TrackingData;
+SELECT *,
+DENSE_RANK() OVER (PARTITION BY City ORDER BY TrackingNumber) AS 'RowNumber'
+FROM TrackingData;
 ```
 
 **Output**
@@ -138,7 +161,12 @@ As we see in the above table, the rank is specific to the city and the unique ra
 Now, we can filter the data based on our RowNumber column to get the top 3 rows for each country as below:
 
 ```sql
-select * from (select *,DENSE_RANK() over (partition by City order by TrackingNumber) as 'RowNumber' from TrackingData) as newTable where newTable.'RowNumber' <=3;
+SELECT *
+FROM (
+  SELECT *,
+  DENSE_RANK() OVER ( PARTITION BY City ORDER BY TrackingNumber) AS 'RowNumber'
+  FROM TrackingData) AS newTable 
+WHERE newTable.'RowNumber' <=3;
 ```
 
 **Output**
@@ -161,7 +189,12 @@ select * from (select *,DENSE_RANK() over (partition by City order by TrackingNu
 Finally, let's merge all our select statement into one to get the desired output.
 
 ```sql
-select * from (select distinct *, DENSE_RANK() over (partition by City order by TrackingNumber) as 'RowNumber' from TrackingData where DeliveryStatus = 'Delivered') as newtable where newtable.RowNumber <=3;
+SELECT *
+FROM (
+  SELECT DISTINCT *,
+  DENSE_RANK() OVER (PARTITION BY City ORDER BY TrackingNumber) AS 'RowNumber'
+  FROM TrackingData WHERE DeliveryStatus = 'Delivered') AS newtable 
+WHERE newtable.RowNumber <=3;
 ```
 
 **Output**
